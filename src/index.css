@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@layer utilities {
-  .parallax-image {
-    @apply absolute top-0 left-0 w-full h-full object-cover pointer-events-none;
-  }
+.parallax-image {
+  @apply absolute top-0 left-0 w-full h-full object-cover pointer-events-none;
 }
