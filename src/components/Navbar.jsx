@@ -2,7 +2,7 @@ const Navbar = () => {
   const navElements = ["Home", "About", "Work", "Contact"];
 
   return (
-    <section className="absolute font-['Poppins',sans] top-0 left-0 z-50 w-full py-[30px] px-[30px] sm:px-[100px] flex justify-between items-center">
+    <nav className="absolute font-['Poppins',sans] top-0 left-0 z-50 w-full py-[30px] px-[30px] sm:px-[100px] flex justify-between items-center">
       <a
         href="#"
         className="text-white font-bold text-3xl uppercase tracking-[2px]"
@@ -21,7 +21,7 @@ const Navbar = () => {
           );
         })}
       </ul>
-    </section>
+    </nav>
   );
 };
 
