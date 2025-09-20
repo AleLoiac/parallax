@@ -2,7 +2,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen w-screen p-[100px] flex justify-center items-center"
+      className="relative min-h-screen w-screen p-[100px] flex justify-center items-center gradient-before-box"
     >
       <img src="/images/stars.png" className="parallax-image" />
       <img src="/images/moon.png" className="parallax-image mix-blend-screen" />

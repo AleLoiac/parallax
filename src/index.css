@@ -5,6 +5,10 @@ body {
   font-family: "Poppins";
 }
 
+.gradient-before-box {
+  @apply before:content-[""] before:absolute before:bottom-0 before:w-full before:h-[100px] before:bg-gradient-to-t before:from-[#1c0522] before:to-transparent before:z-[100];
+}
+
 .parallax-image {
   @apply absolute top-0 left-0 w-full h-full object-cover pointer-events-none;
 }
