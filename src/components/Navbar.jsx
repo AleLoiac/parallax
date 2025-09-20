@@ -9,7 +9,7 @@ const Navbar = () => {
       >
         Logo
       </a>
-      <ul className="flex invisible sm:visible justify-center items-center">
+      <ul className="flex invisible flex-col sm:flex-row sm:visible justify-center items-center">
         {navElements.map((section) => {
           return (
             <li
