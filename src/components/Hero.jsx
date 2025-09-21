@@ -26,7 +26,7 @@ const Hero = () => {
           value * 0.5
         }px)`;
         textRef.current.style.transform = `translate(${
-          -value * 2
+          -value * 4
         }px, ${value}px)`;
         btnRef.current.style.transform = `translateY(${value}px)`;
       }
@@ -57,7 +57,7 @@ const Hero = () => {
       />
       <h2
         ref={textRef}
-        className="absolute text-white whitespace-nowrap text-[15vw] sm:text-[7.5vw] font-bold z-10 right-[-200px] sm:right-[-250px]"
+        className="absolute text-white whitespace-nowrap text-[15vw] sm:text-[7.5vw] font-bold z-10 transform translate-y-[-30px] right-[-350px] sm:right-[-250px]"
       >
         Moon Light
       </h2>
