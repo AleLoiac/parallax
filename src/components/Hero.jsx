@@ -1,8 +1,5 @@
 import { useEffect, useRef } from "react";
 
-// ToDo: remove background, substitute animation with GPU optimazed ones,
-// improve H2 effect slowing it down and increasing font on mobile
-
 const Hero = () => {
   const starsRef = useRef(null);
   const moonRef = useRef(null);
@@ -21,13 +18,17 @@ const Hero = () => {
         textRef.current &&
         btnRef.current
       ) {
-        let value = window.scrollY;
-        starsRef.current.style.left = value * 0.25 + "px";
-        moonRef.current.style.top = value * 1.2 + "px";
-        mountainsBehindRef.current.style.top = value * 0.5 + "px";
-        textRef.current.style.marginRight = value * 4 + "px";
-        textRef.current.style.marginTop = value * 1.5 + "px";
-        btnRef.current.style.transform = `translateY(${10 + value}px)`;
+        const value = window.scrollY;
+
+        starsRef.current.style.transform = `translateX(${value * 0.25}px)`;
+        moonRef.current.style.transform = `translateY(${value * 1.2}px)`;
+        mountainsBehindRef.current.style.transform = `translateY(${
+          value * 0.5
+        }px)`;
+        textRef.current.style.transform = `translate(${
+          -value * 2
+        }px, ${value}px)`;
+        btnRef.current.style.transform = `translateY(${value}px)`;
       }
     };
 
@@ -56,7 +57,7 @@ const Hero = () => {
       />
       <h2
         ref={textRef}
-        className="absolute text-white whitespace-nowrap text-[7.5vw] font-bold z-10 right-[-200px] sm:right-[-250px]"
+        className="absolute text-white whitespace-nowrap text-[15vw] sm:text-[7.5vw] font-bold z-10 right-[-200px] sm:right-[-250px]"
       >
         Moon Light
       </h2>
