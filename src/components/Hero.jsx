@@ -56,6 +56,7 @@ const Hero = () => {
         className="parallax-image"
       />
       <h2
+        translate="no"
         ref={textRef}
         className="absolute text-white whitespace-nowrap text-[15vw] sm:text-[7.5vw] font-bold z-10 transform translate-y-[-30px] right-[-350px] sm:right-[-250px]"
       >
