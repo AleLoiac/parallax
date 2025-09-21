@@ -1,6 +1,9 @@
 const About = () => {
   return (
-    <section id="about" className="relative p-[30px] sm:p-[100px] bg-[#1c0522]">
+    <section
+      id="about"
+      className="relative p-[30px] sm:p-[100px] bg-[#1c0522] scroll-smooth"
+    >
       <h2 className="font-bold text-[3.5em] text-white pb-[10px]">
         Parallax Scrolling Effects
       </h2>

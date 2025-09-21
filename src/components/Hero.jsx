@@ -1,5 +1,8 @@
 import { useEffect, useRef } from "react";
 
+// ToDo: remove background, substitute animation with GPU optimazed ones,
+// improve H2 effect slowing it down and increasing font on mobile
+
 const Hero = () => {
   const starsRef = useRef(null);
   const moonRef = useRef(null);
@@ -38,7 +41,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative overflow-hidden min-h-screen w-screen p-[100px] flex justify-center items-center gradient-before-box"
+      className="relative bg-gradient-to-b from-[#2b1055] to-[#7597de] overflow-hidden min-h-screen w-screen p-[100px] flex justify-center items-center gradient-before-box"
     >
       <img src="/images/stars.png" ref={starsRef} className="parallax-image" />
       <img
