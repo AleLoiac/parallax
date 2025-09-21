@@ -41,7 +41,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative bg-gradient-to-b from-[#2b1055] to-[#7597de] overflow-hidden min-h-screen w-screen p-[100px] flex justify-center items-center gradient-before-box"
+      className="relative bg-gradient-to-b from-[#2b1055] to-[#7597de] overflow-hidden min-h-screen p-[100px] flex justify-center items-center gradient-before-box"
     >
       <img src="/images/stars.png" ref={starsRef} className="parallax-image" />
       <img
